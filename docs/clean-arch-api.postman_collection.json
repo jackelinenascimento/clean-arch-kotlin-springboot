@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "762bff11-44a1-4131-a541-7483b9889ede",
+		"name": "clean-arch-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "9504106"
+	},
+	"item": [
+		{
+			"name": "api/v1/person",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "api/v1/person/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/v1/person/f47e3b3b-4b0d-4f1d-8f8d-3a1b2c3d4e5f"
+			},
+			"response": []
+		},
+		{
+			"name": "api/v1/person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ana Fake\",\n    \"email\": \"ana@fake\",\n    \"age\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/v1/person"
+			},
+			"response": []
+		},
+		{
+			"name": "api/v1/person/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/api/v1/person/24089000-0b43-4f9b-a1b3-5ae663f40223"
+			},
+			"response": []
+		}
+	]
+}
